@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatingAddProfilePhotoViewController" customModule="DatingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="b9a-TR-DCp" id="UZ4-sM-UVa"/>
+                <outlet property="addButton" destination="s9z-18-PdS" id="T1r-ud-l5I"/>
+                <outlet property="containerView" destination="zN2-dc-AD0" id="gcY-Hp-H0l"/>
+                <outlet property="imageView" destination="oER-ZN-p9F" id="Sqh-Im-Fuq"/>
+                <outlet property="photosView" destination="1uZ-No-p5O" id="Ojt-re-Iw7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zN2-dc-AD0" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oER-ZN-p9F">
+                            <rect key="frame" x="112.5" y="60" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Wlc-QO-1UJ"/>
+                                <constraint firstAttribute="height" constant="150" id="ymE-3N-wuN"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uZ-No-p5O">
+                            <rect key="frame" x="20" y="294" width="335" height="175"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="175" id="pAx-ee-h31"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9z-18-PdS" userLabel="Add Button">
+                            <rect key="frame" x="20" y="549" width="335" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Jb6-rD-jvN"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="b9a-TR-DCp">
+                            <rect key="frame" x="177.5" y="185" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayr-Te-ypV">
+                            <rect key="frame" x="20" y="240" width="97" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="oER-ZN-p9F" firstAttribute="centerX" secondItem="zN2-dc-AD0" secondAttribute="centerX" id="IC2-mh-Kyr"/>
+                        <constraint firstItem="1uZ-No-p5O" firstAttribute="leading" secondItem="zN2-dc-AD0" secondAttribute="leading" constant="20" id="JVw-gZ-Sol"/>
+                        <constraint firstItem="Ayr-Te-ypV" firstAttribute="leading" secondItem="zN2-dc-AD0" secondAttribute="leading" constant="20" id="Jhi-k2-GLW"/>
+                        <constraint firstAttribute="trailing" secondItem="s9z-18-PdS" secondAttribute="trailing" constant="20" id="RDa-9o-bIA"/>
+                        <constraint firstItem="b9a-TR-DCp" firstAttribute="centerX" secondItem="zN2-dc-AD0" secondAttribute="centerX" id="cpI-AB-1aV"/>
+                        <constraint firstAttribute="bottom" secondItem="s9z-18-PdS" secondAttribute="bottom" constant="73" id="dbn-IZ-7G0"/>
+                        <constraint firstAttribute="trailing" secondItem="1uZ-No-p5O" secondAttribute="trailing" constant="20" id="eOY-3W-Wf2"/>
+                        <constraint firstItem="oER-ZN-p9F" firstAttribute="top" secondItem="zN2-dc-AD0" secondAttribute="top" constant="60" id="ekq-gZ-9LR"/>
+                        <constraint firstItem="s9z-18-PdS" firstAttribute="leading" secondItem="zN2-dc-AD0" secondAttribute="leading" constant="20" id="f00-2t-HJV"/>
+                        <constraint firstItem="Ayr-Te-ypV" firstAttribute="top" secondItem="oER-ZN-p9F" secondAttribute="bottom" constant="30" id="jKS-fP-0ll"/>
+                        <constraint firstItem="b9a-TR-DCp" firstAttribute="top" secondItem="zN2-dc-AD0" secondAttribute="top" constant="185" id="tRc-bA-MVQ"/>
+                        <constraint firstItem="1uZ-No-p5O" firstAttribute="top" secondItem="Ayr-Te-ypV" secondAttribute="bottom" constant="30" id="yfD-mp-zuP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zN2-dc-AD0" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="AkJ-SU-IvR"/>
+                <constraint firstItem="zN2-dc-AD0" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Wnv-k4-L11"/>
+                <constraint firstItem="zN2-dc-AD0" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="XXY-r0-0VY"/>
+                <constraint firstItem="zN2-dc-AD0" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="xZb-5L-wRb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>

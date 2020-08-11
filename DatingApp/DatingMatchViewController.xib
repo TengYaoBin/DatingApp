@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatingMatchViewController" customModule="DatingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="actionsContainerView" destination="oMr-7u-pgm" id="O89-xu-kOm"/>
+                <outlet property="keepSwipingButton" destination="fIv-Ge-ax2" id="nIg-MV-P3I"/>
+                <outlet property="matchImageView" destination="tO1-pQ-1Wv" id="01h-I1-vCc"/>
+                <outlet property="matchLabel" destination="gmy-cq-zKu" id="eD4-Wh-gIi"/>
+                <outlet property="overlayView" destination="2z7-Kx-5zl" id="xq0-75-kge"/>
+                <outlet property="sendMessageButton" destination="M7Y-Vf-oGO" id="gsF-PC-YzH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tO1-pQ-1Wv">
+                    <rect key="frame" x="0.0" y="5" width="375" height="677"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2z7-Kx-5zl" userLabel="Overlay View">
+                    <rect key="frame" x="0.0" y="5" width="375" height="677"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMr-7u-pgm" userLabel="Actions Container View">
+                            <rect key="frame" x="0.0" y="441" width="375" height="236"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmy-cq-zKu" userLabel="Its a Match Label">
+                                    <rect key="frame" x="166.5" y="10" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7Y-Vf-oGO" userLabel="Send Message Button">
+                                    <rect key="frame" x="164.5" y="81" width="46" height="30"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIv-Ge-ax2" userLabel="Keep Swiping Button">
+                                    <rect key="frame" x="164.5" y="126" width="46" height="30"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="M7Y-Vf-oGO" firstAttribute="centerX" secondItem="oMr-7u-pgm" secondAttribute="centerX" id="1Wp-6s-rKQ"/>
+                                <constraint firstItem="M7Y-Vf-oGO" firstAttribute="top" secondItem="gmy-cq-zKu" secondAttribute="bottom" constant="50" id="1Zv-I8-3fD"/>
+                                <constraint firstItem="fIv-Ge-ax2" firstAttribute="top" secondItem="M7Y-Vf-oGO" secondAttribute="bottom" constant="15" id="50q-En-J15"/>
+                                <constraint firstAttribute="bottom" secondItem="fIv-Ge-ax2" secondAttribute="bottom" constant="80" id="fvd-zh-bdY"/>
+                                <constraint firstItem="gmy-cq-zKu" firstAttribute="centerX" secondItem="oMr-7u-pgm" secondAttribute="centerX" id="gUs-vk-2XN"/>
+                                <constraint firstItem="gmy-cq-zKu" firstAttribute="top" secondItem="oMr-7u-pgm" secondAttribute="top" constant="10" id="ood-Qj-YQL"/>
+                                <constraint firstItem="fIv-Ge-ax2" firstAttribute="centerX" secondItem="oMr-7u-pgm" secondAttribute="centerX" id="pEb-MM-S6m"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="oMr-7u-pgm" secondAttribute="bottom" id="3bD-ui-AgW"/>
+                        <constraint firstItem="oMr-7u-pgm" firstAttribute="leading" secondItem="2z7-Kx-5zl" secondAttribute="leading" id="kCd-Vw-a2L"/>
+                        <constraint firstAttribute="trailing" secondItem="oMr-7u-pgm" secondAttribute="trailing" id="p6v-YM-9wW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tO1-pQ-1Wv" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="8VM-ZS-GuF"/>
+                <constraint firstItem="2z7-Kx-5zl" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="BhT-b8-KE0"/>
+                <constraint firstItem="tO1-pQ-1Wv" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Jcw-Cg-xGy"/>
+                <constraint firstItem="tO1-pQ-1Wv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" constant="10" id="Ly6-Lf-Yn6"/>
+                <constraint firstItem="2z7-Kx-5zl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Uvy-lG-R3x"/>
+                <constraint firstItem="2z7-Kx-5zl" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" constant="10" id="aAT-yR-pdM"/>
+                <constraint firstItem="2z7-Kx-5zl" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="k8N-nC-hXN"/>
+                <constraint firstItem="tO1-pQ-1Wv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="nt4-tP-rzU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="250.40000000000001" y="84.107946026986511"/>
+        </view>
+    </objects>
+</document>
